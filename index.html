@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matrimonio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+    <nav class="navbar">
+        <ul id="nav-links">
+        <li><a href="#storia" data-key="navStoria">La nostra storia</a></li>
+        <li><a href="#cerimonia" data-key="navCerimonia">Cerimonia</a></li>
+        <li><a href="#ricevimento" data-key="navRicevimento">Ricevimento</a></li>
+        <li><a href="#rsvp" data-key="navRSVP">RSVP</a></li>
+        <li><a href="#lista" data-key="navLista">Lista nozze</a></li>
+        </ul>
+    
+        <div class="language-selector" aria-label="Seleziona lingua">
+        <img src="img/it.jpg" alt="Italiano" class="lang-flag" data-lang="it" />
+        <img src="img/fr.svg" alt="Français" class="lang-flag" data-lang="fr" />
+        <img src="img/en.svg" alt="English" class="lang-flag" data-lang="en" />
+        </div>
+    </nav>
+
+    <div class="hero-text">
+        <h1 id="names">Annapaola & Adrian</h1>
+        <p class="date" id="date">5 Luglio 2026</p>
+
+        <div class="countdown">
+        <div class="time-box"><span id="days">00</span><small data-key="days">Giorni</small></div>
+        <div class="time-box"><span id="hours">00</span><small data-key="hours">Ore</small></div>
+        <div class="time-box"><span id="minutes">00</span><small data-key="minutes">Minuti</small></div>
+        <div class="time-box"><span id="seconds">00</span><small data-key="seconds">Secondi</small></div>
+        </div>
+    </div>
+</header>
+
+<main>
+  <section id="storia" class="content-section">
+    <h2 data-key="storiaTitle">La nostra storia</h2>
+    <p data-key="storiaText">Qui raccontiamo la nostra storia d'amore...</p>
+  </section>
+
+  <section id="cerimonia" class="content-section ceremony-section">
+    <div class="ceremony-container">
+      <div class="map-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.902832392737!2d14.402049200000002!3d40.6379998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b993e28f59063%3A0xb6bd844cfbbb9638!2sVilla%20Fondi%20De%20Sangro!5e1!3m2!1sit!2sit!4v1753004394443!5m2!1sit!2sit"
+          width="100%"
+          height="250"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+  
+      <div class="ceremony-details">
+        <h2 data-key="cerimoniaTitle"></h2>
+        <p class="place-name"></p>
+        <p data-key="cerimoniaText"></p>
+        <a 
+          href="https://www.google.com/maps/dir/?api=1&destination=Chiesa+di+San+Giovanni+in+Laterano+Roma" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style="padding: 10px 15px; background-color: #a65f6b; color: white; text-decoration: none; text-align: center; border-radius: 5px; font-weight: bold;">
+          Indicazioni stradali
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="ricevimento" class="content-section">
+    <h2 data-key="ricevimentoTitle">Ricevimento</h2>
+    <p data-key="ricevimentoText">Dettagli sul ricevimento...</p>
+  </section>
+
+  <section id="rsvp" class="content-section">
+    <h2 data-key="rsvpTitle">Conferma la tua presenza</h2>
+    <p data-key="rsvpText">Compila il modulo per confermare.</p>
+  </section>
+  
+
+  <section id="lista" class="content-section">
+    <h2 data-key="listaTitle">Lista nozze</h2>
+    <p data-key="listaText">Informazioni sulla lista nozze...</p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
